@@ -1,3 +1,4 @@
+<style>
 /* Reset browser default spacing */
 html, body {
   margin: 0;
@@ -48,8 +49,6 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
-
 }
 
 /* ✅ Belief Section */
@@ -60,7 +59,6 @@ html, body {
   padding: 80px;
   background-color: white; 
   color: black;
-   height: 100vh;
 }
 .belief-text {
   flex: 1;
@@ -89,3 +87,4 @@ html, body {
   max-width: 900vh;
   border-radius: 10px;
 }
+</style>
