@@ -6,11 +6,11 @@ html, body {
   width: 100vh;
 }
 
-/* Chocolate brown background first page */
+/* Chocolate brown background */
 #app, .app {
   min-height: 100vh;
   width: 100vw;
-  background-color: #7B3F00;
+  background-color: #50220E;
   color: White;
   display: flex;
   flex-direction: column;
@@ -49,8 +49,36 @@ html, body {
   justify-content: center;
   text-align: center;
   height: 100vh;
-
+  position: relative;  
+  overflow: hidden;  
 }
+
+.hero h1 {
+  font-size: 4.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;                  
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  font-weight: 300;
+  z-index: 2;                  
+}
+.hero img {
+  position: absolute;
+  top: 50%;                  
+  left: 50%;              
+  transform: translate(-50%, -50%);
+  z-index: 1;                
+  max-width: 800px;            /* adjust size */
+  opacity: 0.9;      
+  pointer-events: none;    
+}
+
 
 /* ✅ Belief Section */
 .belief {
@@ -60,32 +88,181 @@ html, body {
   padding: 80px;
   background-color: white; 
   color: black;
-   height: 100vh;
+  min-height: 50vh; 
+   flex-wrap: wrap;
 }
 .belief-text {
-  flex: 1;
-  padding-right: 40px;
+  flex: 1  50%;
+  padding-right: 20px;
 }
 
 .belief-text h2 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  max-height: 300px;
+   max-width: 500px;
 }
 
 .belief-text p {
   font-size: 1.1rem;
   line-height: 1.6;
   max-width: 500px;
+   font-weight: 300;
 }
 
 .belief-image {
   flex: 1;
   display: flex;
-  justify-content: center;
+    justify-content: center; 
+    margin-top:20px;
 }
 
 .belief-image img {
+  width: 100%; 
+  max-width: 400vh;
+ height: auto;
+  border-radius: 0px;
+}
+
+/* ✅ Adventure Section */
+.advent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: white; 
+  color: black;
+   min-height: 50vh; 
+   flex-wrap: wrap;
+}
+.advent-text {
+  flex: 1 50%;
+  padding-left: 60px;
+}
+
+.advent-text h2 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-height: 300px;
+   max-width: 500px;
+}
+
+.advent-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+   font-weight: 300;
+}
+
+.advent-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.advent-image img {
   max-width: 900vh;
-  border-radius: 10px;
+   height: auto;
+  width: 100%; 
+}
+
+/* ✅ Pink Section */
+.pink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #7F2b3b; 
+  color: White;
+   min-height: 100vh; 
+   flex-wrap: wrap;
+}
+.pink-text {
+  flex: 1;
+}
+
+.pink-text h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-height: 300px;
+  max-width: 500px;
+}
+
+.pink-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 400px;
+  font-weight: 300;
+ padding-left: 50px;
+}
+
+.pink-image {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.pink-image img {
+  max-width: 900vh;
+  max-height: 100vh;
+  border-radius: 0px;
+}
+/* ✅ Choose Section */
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+   min-height: 100vh; 
+   flex-wrap: wrap;
+  background-color: #F5F5F5; 
+  color: black;
+}
+.choose-text{
+  margin-bottom:30px;
+  margin: 40px;
+}
+
+.choose-text h2 {
+ font-size: 3.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-height: 300px;
+   max-width: 600px;
+}
+.choose-text p{
+   font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.choose-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 5px;
+}
+.choose-image  {
+  background: #F5F5F5;
+  padding: 10px;
+  border: 3px solid #D4D4D4;
+  max-width: 100vh;
+  margin: 40px;
+
+}
+.choose-image h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.choose-image p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 600px;
+  font-weight: 300;
+  color: black;
 }
