@@ -3,6 +3,7 @@
     <!-- ✅ Navbar -->
     <nav class="navbar">
       <ul>
+      <img src="./assets/Screenshot 2025-09-07 104415.png"/>
         <li><a href="#">Home</a></li>
         <li><a href="#">Bags</a></li>
         <li><a href="#">Accessories</a></li>
@@ -13,7 +14,7 @@
 
     <!-- ✅ Hero Section -->
     <section class="hero">
-    <img src="./assets/Screenshot_2025-09-07_105537-removebg-preview.png"/>
+    <img src="./assets/Screenshot_2025-09-07_105537-removebg-preview.png" style="width: 800px; height: auto;"/>
       <h1>Markly Bags</h1>
       <p>   We believe in the power of a well-crafted bag to enhance your lifestyle.
        <br> Explore our curated collection of premium bags that seamlessly blend style,

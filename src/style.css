@@ -19,16 +19,22 @@ html, body {
 
 /* ✅ Navbar */
 .navbar {
-  background-color: #4b2e2e; /* dark brown */
+  /* background-color: #4b2e2e; dark brown */
+  background-color: #50220E;
   padding: 30px;
+   border: 3px solid #D4D4D4;
+}
+.navbar ul img{
+width: 120px; 
+height: 40px;
+justify-content: left;
 }
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  gap: 200px;
 }
 .navbar a {
   color: white;
@@ -181,7 +187,8 @@ html, body {
    flex-wrap: wrap;
 }
 .pink-text {
-  flex: 1;
+  flex:  1 50%;
+  padding-left: 60px;
 }
 
 .pink-text h2 {
@@ -209,7 +216,6 @@ html, body {
 .pink-image img {
   max-width: 900vh;
   max-height: 100vh;
-  border-radius: 0px;
 }
 /* ✅ Choose Section */
 .choose {
@@ -249,8 +255,9 @@ html, body {
   background: #F5F5F5;
   padding: 10px;
   border: 3px solid #D4D4D4;
-  max-width: 100vh;
+  max-width: auto;
   margin: 40px;
+  border-radius: 30px;
 
 }
 .choose-image h3 {
